@@ -1,0 +1,15 @@
+#FDISK
+
+  -Hacemos el comando fdisk -l para ver las particiones que hay echas y donde se pueden hacer las nuevas particiones.
+
+  -Cuando sepamos con el anterior comando la ruta del disco hay que g¡hacer fdisk y en mi caso "fdisk /dev/mapper/fedora-root". Al darle al enter te dira que si necesitas ayuda pongas m.
+
+  -Con m descubro que para crear una nueva particion hay que poner una n te pregunta si quieres que sea primarea o extendida. Para escojer primarea hay que poner una "p" y para extendida una "e" .
+
+  -Ponemos una "e" creamos una extendida preguntara el numero de particion y te dira que por defecto es la 1 le das al enter. Tambien te preguntan el sector pero cojere el predeterminado dandole a enter.
+
+  -Acontinuacion te preguntara de que tamaño quieres hacer la particion pones "+100" y enter.
+
+  -Esta operacion dos vezes si quieres crear dos particiones extendidas de 100.
+
+  -Eliminamos las particiones antiguas con el comando "mkfs -t exit4  /dev/sdb1"
